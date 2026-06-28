@@ -15,5 +15,7 @@ jobs:
     steps:
       - name: Build the app
         run: echo "Building the application"
-        
+
+      - name: Test the application"
+        run: echo "Testing the application"
         
