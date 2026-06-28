@@ -1,5 +1,8 @@
 name: My-demo-flow
-on: workflow_dispatch
+on:
+  push:
+    branches:
+    - main
 jobs:
   Checkout:
     runs-on: ubuntu-latest
