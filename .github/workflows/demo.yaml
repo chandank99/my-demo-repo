@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code.
-        uses: Checkout@v3
+        uses: actions/checkout@v4
 
       - name: Print message
         run: echo "hello world"
