@@ -10,15 +10,10 @@ jobs:
       - name: Checkout the code.
         uses: actions/checkout@v4
 
-      - name: Print message
-        run: echo "hello world"
-  Build:
-    needs: Checkout
-    runs-on: ubuntu-latest
-    steps:
-      - name: Build the app
-        run: echo "Building the application"
-
-      - name: Test the application"
-        run: echo "Testing the application"
-        
+      - name: SetUp java17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17' 
+      - name: compile java app
+        run: javac HelloWorld.java
